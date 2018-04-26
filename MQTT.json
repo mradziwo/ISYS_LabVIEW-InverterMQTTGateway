@@ -1,0 +1,27 @@
+{
+  "client":"ModbusoverMQTT",
+  "broker":   
+  {
+    "address":"192.168.20.249",
+    "port":1883,
+    "connTimeout":5000,
+    "writeTimeout":5000,
+    "readTimeout":5000,
+    "subTimeout":5000
+  },
+  "connFlags":
+  {
+    "reserved":false,
+    "clean session":true,
+    "will flag":false,
+    "willQOS":"",
+    "will retain":false,
+    "password":false,
+    "user name":false
+  },
+  "User Info":
+  {
+    "User Name":"",
+    "Password":""
+  }
+}

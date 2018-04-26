@@ -1,0 +1,11 @@
+{
+  "Subscriptions":
+  {
+    "Engage":"Inverter/Engage",
+    "Drive":"Inverter/Drive"
+  },
+  "Broadcasts":
+  {
+    "Status":"Inverter/Status"
+  }
+}
