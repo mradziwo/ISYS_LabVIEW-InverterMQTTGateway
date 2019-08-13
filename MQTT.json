@@ -1,27 +1,27 @@
 {
-  "client":"ModbusoverMQTT",
-  "broker":   
-  {
-    "address":"192.168.20.249",
-    "port":1883,
-    "connTimeout":5000,
-    "writeTimeout":5000,
-    "readTimeout":5000,
-    "subTimeout":5000
+  "Broker": {
+    "IP": "192.168.20.249",
+    "port": 1883,
+    "connTimeout": 3000,
+    "writeTimeout": 3000,
+    "readTimeout": 3000,
+    "subTimeout": 3000
   },
-  "connFlags":
-  {
-    "reserved":false,
-    "clean session":true,
-    "will flag":false,
-    "willQOS":"",
-    "will retain":false,
-    "password":false,
-    "user name":false
+  "Connect Flags": {
+    "reserved": false,
+    "clean session": false,
+    "will flag": true,
+    "willQOS": "At least once",
+    "will retain": true,
+    "password": false,
+    "user name": false
   },
-  "User Info":
-  {
-    "User Name":"",
-    "Password":""
+  "Keep Alive": 5000,
+  "Client Info": {
+    "ClientId": "INVerterDriver$$$$$",
+    "Will Topic": "InverterDriver/Online",
+    "Will Message": "flase",
+    "User Name": "",
+    "Password": ""
   }
 }

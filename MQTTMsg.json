@@ -6,6 +6,6 @@
   },
   "Broadcasts":
   {
-    "Status":"Inverter/Status"
+    "State":"Inverter/State"
   }
 }
