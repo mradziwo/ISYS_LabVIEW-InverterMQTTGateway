@@ -9,6 +9,7 @@
 		<Property Name="IOScan.Priority" Type="UInt">9</Property>
 		<Property Name="IOScan.ReportModeConflict" Type="Bool">true</Property>
 		<Property Name="IOScan.StartEngineOnDeploy" Type="Bool">false</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -364,10 +365,13 @@
 		</Item>
 		<Item Name="Command.ctl" Type="VI" URL="../Libraries/ModbusOverMOXA/Command.ctl"/>
 		<Item Name="Launcher.vi" Type="VI" URL="../Libraries/ModbusOverMOXA/Launcher.vi"/>
+		<Item Name="Version.vi" Type="VI" URL="../Version.vi"/>
+		<Item Name="updateGitRevision.vi" Type="VI" URL="../updateGitRevision.vi"/>
 		<Item Name="MQTT.json" Type="Document" URL="../MQTT.json"/>
 		<Item Name="MQTTMsg.json" Type="Document" URL="../MQTTMsg.json"/>
 		<Item Name="Serializer.json" Type="Document" URL="../Serializer.json"/>
 		<Item Name="Test ModbusOverMOXA API.vi" Type="VI" URL="../Libraries/ModbusOverMOXA/Test ModbusOverMOXA API.vi"/>
+		<Item Name="Pre-Build Action.vi" Type="VI" URL="../Pre-Build Action.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AddNamedRendezvousPrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/AddNamedRendezvousPrefix.vi"/>
@@ -424,6 +428,10 @@
 				<Item Name="usereventprio.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/usereventprio.ctl"/>
 				<Item Name="Wait at Rendezvous.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/Wait at Rendezvous.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="TRef TravTarget.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef TravTarget.ctl"/>
+				<Item Name="VI Scripting - Traverse.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/traverseref.llb/VI Scripting - Traverse.lvlib"/>
+				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
+				<Item Name="TRef Traverse.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Traverse.vi"/>
 			</Item>
 			<Item Name="BuildCommand.vi" Type="VI" URL="../Libraries/ModbusOverMOXA/BuildCommand.vi"/>
 			<Item Name="decodeStatus.vi" Type="VI" URL="../Libraries/ModbusOverMOXA/decodeStatus.vi"/>
@@ -447,6 +455,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/invexe</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/Pre-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{00F879A2-5D74-49BE-89B0-ECFBA4637783}</Property>
 				<Property Name="Bld_version.build" Type="Int">6</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
@@ -459,7 +468,7 @@
 				<Property Name="Destination[2].destName" Type="Str">support</Property>
 				<Property Name="Destination[2].path" Type="Path">../builds/NI_AB_PROJECTNAME/invexe/support</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{24A854A4-6883-47E6-B2E3-846AA701769E}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E62F337D-A437-4486-9E21-3BA887AB3817}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Launcher.vi</Property>
